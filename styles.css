@@ -1,0 +1,157 @@
+* {
+    margin: 0; 
+    font-family:Helvetica;
+}
+
+body, html {
+    height: 100%; 
+    overflow: auto; 
+    padding-top: 100px;
+    
+
+}
+
+main {
+    overflow: auto; 
+    z-index: 500;
+}
+      
+.upper_box {
+    background-color:#202020;
+    height: 40px;
+    text-align: center;
+
+    
+}
+.upper_box a {
+    color: #FBFBFB;
+    text-decoration: none;
+}
+
+.upperLink_text {
+    padding-top: 14px;
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 30px;
+   
+
+}
+
+.headerButtonLeft {
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 50px 10px 50px;
+    font-weight: 100;
+    margin-top: 22px;
+    margin-left: 25px;
+    cursor: pointer;
+    
+}
+
+.headerButtonLeft:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.headerButtonRight {
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 30px 10px 30px;
+    font-weight: 100;
+    margin-top: 22px;
+    cursor: pointer;
+    
+    
+}
+
+.headerButtonRight:hover {
+    background-color: #5B3228;
+    color: white;
+}
+
+.eyeglass {
+    width: 30px;
+    height: 30px;
+    margin-left: 14px;
+    margin-top: 25px;
+    float: right;
+    cursor: pointer;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    padding-top: 10px;
+    padding-right: 120px;
+}
+
+.headerList {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-top: 37px;
+    margin-left: 140px;
+    margin-right: 100px;
+    
+}
+
+.listItems :hover{
+ text-decoration: underline;
+ color: gray;
+ cursor: pointer;
+}
+
+.stickyHeader {
+ width: 100%;
+ z-index: 1000;
+ top: 0;
+ left: 0;
+ height: 202px;
+ background-color: #FBFBFB;
+ position: fixed;
+
+}
+
+.topHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainImg {
+    width: 97%; 
+    padding-top: 720px;   
+    z-index: 400;
+    position: fixed;  
+}
+
+.mainImageTxt {
+    z-index: 500;
+    position: absolute;
+    top: 400px;
+    left: 220px;
+}
+.mainImageTxt  h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #FBFBFB;
+    line-height: 6rem;
+    position: fixed;
+    }
+    
+   
+
+
+
+
+    
+    
