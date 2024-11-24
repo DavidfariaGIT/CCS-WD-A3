@@ -156,24 +156,45 @@ main {
     z-index: 20;
     position: relative;
     display:flex;
+    flex-wrap: wrap;
+    
     
 }
 
 .FSimage {
     z-index: 10;
+    height: 1200px;
     width: 100%;
 }
 
 .FSpara{
-     color: red;
-     font-size: 3.5rem;
+     color: white;
+     text-align: center;
+     font-size: 4rem;
      z-index: 1100;
      position: absolute;
      justify-content: center;
      align-self: center; 
      padding-left: 300px;
-
+     scroll-behavior: smooth;
 }
+
+
+.FSButton {
+   position: absolute;
+   z-index: 1200;
+    bottom: 140px;
+    right:1170px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+}
+.FSButton:hover {
+    background-color: #FBFBFB;
+    color: #202020;
+ }
+
 
 
     
