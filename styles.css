@@ -195,7 +195,50 @@ main {
     color: #202020;
  }
 
-
-
-    
+ .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 35px; /* Gap between items */
+    padding: 170px 90px 20px 90px;
+    margin: 0px 30px 0px 30px;
+    background-color: #FBFBFB;
+    width: 100%;
+  }
+  
+  /* Individual gallery item */
+  .item {
+    text-align: center;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 600px;
+    max-width: 400px; /* Limit image size */
+    margin-bottom: 10px;
+  }
+  
+  /* Header styling */
+  .item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Description styling */
+  .item p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .gallery_title {
+    position: absolute;
+    left: 1250px;
+    bottom: -30px;
+    z-index: 1200;
+  }
+  
+.gallery_title h2 {
+    font-weight: 100;
+    font-size: 1.1rem;
+}
     
