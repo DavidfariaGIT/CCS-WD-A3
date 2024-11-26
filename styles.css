@@ -55,6 +55,7 @@ main {
 .headerButtonLeft:hover {
     background-color: rgb(0, 0, 0);
     color: white;
+    text-shadow: 2px 2px 4px #cecece;
 }
 
 .headerButtonRight {
@@ -71,6 +72,7 @@ main {
 .headerButtonRight:hover {
     background-color: #5B3228;
     color: white;
+    text-shadow: 2px 2px 4px #bebebe;
 }
 
 .eyeglass {
@@ -101,11 +103,29 @@ main {
     
 }
 
-.listItems :hover{
- text-decoration: underline;
- color: gray;
- cursor: pointer;
+ .listItems :hover {
+    text-decoration: underline;
+    color: gray;
+    cursor: pointer;
+    text-shadow: 2px 2px 6px #cecece;  
 }
+
+.listItems :active ::after{
+    content: "View all Magazine Books Subscribe About";
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0px;
+    bottom: -50px;
+    word-spacing: 1.7rem;
+    transition: 2s;
+    background-color: #FBFBFB;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 620px;
+    
+}
+    
 
 .stickyHeader {
  width: 100%;
@@ -115,8 +135,9 @@ main {
  height: 202px;
  background-color: #FBFBFB;
  position: fixed;
-
 }
+
+
 
 .topHeaderContainer {
     display: flex;
@@ -139,6 +160,7 @@ main {
     position: absolute;
     top: 400px;
     left: 220px;
+    z-index: 500;
 }
 .mainImageTxt  h1 {
     font-size: 5rem;
@@ -200,6 +222,7 @@ main {
 .FSbutton:hover {
     background-color: #FBFBFB;
     color: #202020;
+    text-shadow: 2px 2px 4px #cecece;
 }
 
 .gallery {
@@ -216,7 +239,18 @@ main {
   
 .item {
     text-align: center;
+    
   }
+
+
+
+.gal_img:hover{
+    height: 500px;
+    max-width: 350px;
+    box-shadow: 4px 4px 4px rgb(60, 60, 60);
+    transition: 0.5s;
+    }
+
   
 .item img {
     width: 100%;
@@ -317,6 +351,149 @@ main {
     line-height: 1.6rem;
     width: 1000px;
  }
+
+
+@media (max-width: 600px) {
+
+    main {
+        max-width: 600px;
+    }
+
+    .mainImg {
+        width: 97%; 
+        z-index: 10;
+        position: fixed;
+        top: -70px;
+        
+        
+    }
+
+    .mainImageTxt {
+        top: 360px;
+        left: 100px;
+        z-index: 500;
+    }
+    .mainImageTxt  h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .stickyHeader {
+       max-width: 600px;
+       height: 130px;
+
+    }
+   
+    .topHeaderContainer {
+      max-width: 600px;
+      
+    }
+
+    .topHeaderContainer img {
+        max-width: 560px;
+        object-fit:cover;     
+        height: 800px;
+        
+      }
+
+    .headerList {
+        display: none; 
+    }
+
+    .headerButtonLeft {
+       display: none;
+        
+    }
+    
+    .headerButtonRight {
+       display: none;
+        
+    }
+
+    .FSpara{
+        font-size: 2rem;
+        top: 240px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        background-color: #FBFBFB;
+        width: 100%;
+        padding-top: 0px;
+        position: relative;
+        top: -52px;
+      }
+
+      .item img {
+        width: 100%;
+        height: 300px;
+        max-width: 200px; 
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 70px;
+      }
+
+      .gal_img:hover{
+        height: 350px;
+        max-width: 230px;
+       
+        }
+
+        .books_Container { 
+            max-width:600px;  
+        }
+        .booksImage {
+            width:560px;
+        }
+        .books_Container p {
+            text-align: left;
+            font-size: 0.9rem;
+            max-width: 550px;
+        }
+        .books_Container h1 {
+            padding-top: 40px;
+            font-size: 2.5rem; 
+            max-width: 565px;
+         }
+
+         .books_Container h3 {
+            display: none;
+         }
+
+         .books_Container hr {
+            width: 550px; 
+            color: #d8d8d8; 
+            border-width: 0.5px;
+            margin-bottom: 50px;
+            margin-top: 30px;
+          }
+
+          .eyeglass {
+            width: 20px;
+            height: 20px;
+            margin-left: 14px;
+            margin-top: 35px;
+            float: right;
+            cursor: pointer;
+        }
+        
+        .logo {
+            width: 250px;
+            height: auto;
+            position: absolute;
+            left: 180px;
+            
+
+        }
+
+   
+        
+       
+    
+    
+}
 
  
 
