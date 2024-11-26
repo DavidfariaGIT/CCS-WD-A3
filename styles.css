@@ -126,7 +126,6 @@ main {
     
 }
     
-
 .stickyHeader {
  width: 100%;
  z-index: 1999;
@@ -239,9 +238,7 @@ main {
   
 .item {
     text-align: center;
-    
-  }
-
+}
 
 
 .gal_img:hover{
@@ -352,12 +349,168 @@ main {
     width: 1000px;
  }
 
+ @media (max-width: 1024px) {
+    main {
+        max-width: 1024px;
+    }
+
+    .mainImg {
+        width: 97%;
+        z-index: 10;
+        position: fixed;
+        top: -70px;   
+    }
+
+    .mainImageTxt {
+        top: 260px;
+        left: 100px;
+        z-index: 500;
+    }
+    .mainImageTxt  h1 {
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+
+    .stickyHeader {
+       max-width: 1024px;
+       height: 190px;
+
+    }
+   
+    .topHeaderContainer {
+      max-width: 1024px;
+      
+    }
+
+    .topHeaderContainer img {
+        max-width: 960px;
+        object-fit:cover;
+        object-position: bottom right;     
+        height: 550px;
+        
+      }
+
+      .headerList {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        font-size: 0.7rem;
+        font-weight: 200;
+        margin-top: 37px;
+        margin-left: 30px;
+        margin-right: 50px;
+        
+    }
+
+    .listItems :active ::after{
+        content: "View all Magazine Books Subscribe About";
+        font-size: 0.8rem;
+        position: absolute;
+        left: 0px;
+        bottom: -30px;
+        word-spacing: 1.7rem;
+        transition: 2s;
+        background-color: #FBFBFB;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 310px;
+        
+    }
+
+    .FSimage {
+        height: 570px;
+    }
+    .FSpara{
+        font-size: 2rem;
+        top: 310px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;  
+      }
+
+      .item img {
+        width: 100%;
+        height: 300px;
+        max-width: 200px; 
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 70px;
+      }
+
+      .item h3 {
+        font-size: 0.8em;
+      }
+
+      .gal_img:hover{
+        height: 350px;
+        max-width: 230px;
+       
+        }
+
+        .books_Container { 
+            max-width:1024px;  
+        }
+        .booksImage {
+            width:560px;
+        }
+        .books_Container p {
+            text-align: left;
+            font-size: 0.9rem;
+            max-width: 550px;
+        }
+        .books_Container h1 {
+            padding-top: 40px;
+            font-size: 2.5rem; 
+            max-width: 565px;
+         }
+
+         .books_Container h3 {
+            display: none;
+         }
+
+         .books_Container hr {
+            width: 550px; 
+            color: #d8d8d8; 
+            border-width: 0.5px;
+            margin-bottom: 50px;
+            margin-top: 30px;
+          }
+
+          .eyeglass {
+            width: 22px;
+            height: 22px;
+            margin-left: 18px;
+            margin-top: 30px;
+            float: right;
+            cursor: pointer;
+        }
+        
+        .logo {
+            width: 250px;
+            height: auto;
+            position: absolute;
+            left: 380px;
+            
+
+        }   
+}
 
 @media (max-width: 600px) {
 
     main {
         max-width: 600px;
     }
+
+    .topHeaderContainer img {
+        max-width: 960px;
+        object-fit:cover;
+        object-position: bottom center;     
+        height: 500px;
+        
+      }
 
     .mainImg {
         width: 97%; 
@@ -367,11 +520,11 @@ main {
         
         
     }
-
     .mainImageTxt {
-        top: 360px;
+        top: 240px;
         left: 100px;
         z-index: 500;
+        font-size: 2rem;
     }
     .mainImageTxt  h1 {
         font-size: 3.5rem;
@@ -440,7 +593,7 @@ main {
         max-width: 230px;
        
         }
-
+        
         .books_Container { 
             max-width:600px;  
         }
@@ -486,14 +639,9 @@ main {
             left: 180px;
             
 
-        }
-
-   
-        
-       
-    
-    
+        }   
 }
+
 
  
 
