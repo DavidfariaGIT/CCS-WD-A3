@@ -15,6 +15,11 @@ main {
     z-index: 500;
 }
 
+em.seo, strong.seo {
+    font-weight: lighter;
+    font-size: normal;
+}
+
 .upper_box {
     background-color: #202020;
     height: 40px;
